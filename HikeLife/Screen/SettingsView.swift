@@ -8,6 +8,17 @@
 import SwiftUI
 
 struct SettingsView: View {
+    // MARK: - PROPERTIES
+    
+    private let alternativeAppIcons: [String] = [
+        "AppIcon-Backpack",
+        "AppIcon-Camera",
+        "AppIcon-Campfire",
+        "AppIcon-MagnifyingGlass",
+        "AppIcon-Map",
+        "AppIcon-Mushroom"
+    ]
+    
     var body: some View {
         List {
             // MARK: - SECTION: HEADER
@@ -67,6 +78,43 @@ struct SettingsView: View {
             
             
             // MARK: - SECTION: ICONS
+            
+            Section(header: Text("Alternative Icons")) {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 12) {
+                        ForEach(alternativeAppIcons.indices, id: \.self) { item in
+                            Button {
+                                print("Icon \(alternativeAppIcons[item]) was pressed.")
+                                
+                                UIApplication.shared.setAlternateIconName(
+                                    alternativeAppIcons[item]) { error in
+                                        if error != nil {
+                                            print("Failed request to update the app's icon: \(String(describing: error?.localizedDescription))")
+                                        } else {
+                                            print("Seccess! You have changed the app's icon to \(alternativeAppIcons[item])")
+                                        }
+                                        
+                                    }
+                            } label: {
+                                Image("\(alternativeAppIcons[item])-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .cornerRadius(16)
+                            }
+                        }
+                    }
+                } //: SCROLL VIEW
+                .padding(.top, 12)
+                
+                Text("Choose your favorite app icon from the collection above.")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.secondary)
+                    .font(.footnote)
+                    .padding(.top, 12)
+            } //: SECTION
+            .listRowSeparator(.hidden)
             
             // MARK: - SECTION: ABOUT
             Section(
