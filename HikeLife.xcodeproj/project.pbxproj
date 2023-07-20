@@ -19,6 +19,7 @@
 		0DF48BC62A691EEE00E0E15F /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF48BC52A691EEE00E0E15F /* CustomCircleView.swift */; };
 		0DF48BC82A69214600E0E15F /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF48BC72A69214500E0E15F /* MotionAnimationView.swift */; };
 		0DF48BCB2A693D9300E0E15F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF48BCA2A693D9300E0E15F /* SettingsView.swift */; };
+		0DF48BCD2A695B2700E0E15F /* CustomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF48BCC2A695B2700E0E15F /* CustomListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		0DF48BC52A691EEE00E0E15F /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
 		0DF48BC72A69214500E0E15F /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		0DF48BCA2A693D9300E0E15F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0DF48BCC2A695B2700E0E15F /* CustomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				0DF48BBC2A6861D400E0E15F /* CustomBackgroundView.swift */,
 				0DF48BC12A686DE700E0E15F /* CustoButtonView.swift */,
 				0DF48BC52A691EEE00E0E15F /* CustomCircleView.swift */,
+				0DF48BCC2A695B2700E0E15F /* CustomListRowView.swift */,
 			);
 			path = Companent;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				0D85EC852A685B7700EB2397 /* ContentView.swift in Sources */,
 				0DF48BC62A691EEE00E0E15F /* CustomCircleView.swift in Sources */,
+				0DF48BCD2A695B2700E0E15F /* CustomListRowView.swift in Sources */,
 				0DF48BC22A686DE700E0E15F /* CustoButtonView.swift in Sources */,
 				0DF48BBA2A685F5F00E0E15F /* CardView.swift in Sources */,
 				0D85EC832A685B7700EB2397 /* HikeLifeApp.swift in Sources */,
